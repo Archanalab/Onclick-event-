@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="n">
+<head>
+<title> Draft of E-mail </title>
+<script src="My file.js"></script>
+</head>
+<body style="background-color:aqua;">
+<h2 id="heading" aria-live="polite "></h2>
+<div id="sub">
+<h1> Compose email </h1> 
+<form>
+<label for="em"> To: </label>
+<input id="em" type="email" autocomplete="email"> <br>
+<label for="name"> Subject </label>
+<input id="name" type="text"> <br>
+<label for="myfile"> Attachment: </label>
+  <input type="file" id="myfile" name="myfile"><br>
+<label for="mfile"> More attachment: </label>
+  <input type="file" id="mfile" name="myfile"><br>
+<form>
+<textarea name="message" row="15" cols="30"> Message </textarea>
+</form>
+<button id="buton" onclick="press()"> Send </button>
+</div>
+<p>Current Date and Time is <span id='date-time'></span>.</p>
+<script>
+var dt = new Date(); document.getElementById('date-time').innerHTML=dt;
+</script>
+</body>
+</html>
